@@ -1,0 +1,48 @@
+on: push
+
+jobs:
+  render-book:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      RENV_PATHS_ROOT: ~/.local/share/renv
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - uses: r-lib/actions/setup-pandoc@v1
+
+      - uses: r-lib/actions/setup-r@v1
+      
+      - name: Cache packages
+        uses: actions/cache@v1
+        with:
+          path: ${{ env.RENV_PATHS_ROOT }}
+          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-renv-
+
+      - name: Restore packages
+        shell: Rscript {0}
+        run: |
+          if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
+          renv::restore()
+          
+      - name: Install downlit
+        run: Rscript -e 'install.packages("downlit")'
+
+      - name: Install xml2
+        run: Rscript -e 'install.packages("xml2")'
+      
+      - name: Render book
+        run: Rscript -e 'bookdown::render_book()'
+      
+      - name: Commit results
+        run: |
+          git config --local user.email "oelschlaeger.lennart@gmail.com"
+          git config --local user.name "Lennart Oelschlaeger"
+          git add .
+          git commit -m 'Rendered book :books:' || echo "No changes to commit"
+          git push origin || echo "No changes to commit"
