@@ -2,7 +2,7 @@
 
 ## Was ist die Idee?
 
-Wir möchten die Beziehung zwischen zwei Merkmalen verstehen. Zum Beispiel: Welchen Einfluss hat die Wohnfläche auf den Wert eines Hauses? Dafür brauchen wir Daten. Zum Glück haben wir einen Datensatz vorliegen mit Verkaufspreisen von Häusern in Boston 1990:^[Zugegeben, die Daten sind alt und wahrscheinlich nicht repräsentativ für Deutschland, aber für eine Demonstration genügen sie.] **price** ist der Verkaufspreis in Dollar, **sqm** die Wohnfläche in Quadratmetern, **bedrooms** die Anzahl an Schlafzimmern, **lotsize** die Grundstücksfläche in Quadratmetern und **colonial** ein Indikator dafür, ob das Haus im [Kolonialstil](https://de.wikipedia.org/wiki/Kolonialstil) gebaut wurde.
+Wir möchten die Beziehung zwischen zwei Merkmalen verstehen. Zum Beispiel: Welchen Einfluss hat die Wohnfläche auf den Wert eines Hauses? Dafür brauchen wir Daten. Zum Glück haben wir einen Datensatz vorliegen mit Verkaufspreisen von Häusern in Boston 1990:^[Zugegeben, die Daten sind alt und wahrscheinlich nicht repräsentativ für Deutschland, aber für eine Demonstration genügen sie.] **price** ist im Datensatz der Verkaufspreis in Dollar, **sqm** die Wohnfläche in Quadratmetern, **bedrooms** die Anzahl an Schlafzimmern, **lotsize** die Grundstücksfläche in Quadratmetern und **colonial** ein Indikator dafür, ob das Haus im [Kolonialstil](https://de.wikipedia.org/wiki/Kolonialstil) gebaut wurde.
 
 
 
