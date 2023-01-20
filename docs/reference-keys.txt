@@ -1,1 +1,6 @@
+einfache-regressionsanalyse
+was-ist-die-idee
+wie-definieren-wir-das-modell
+warum-taucht-der-logarithmus-auf
 in-r
+was-für-ein-modell

@@ -1,0 +1,43 @@
+# Einfache Regressionsanalyse
+
+## Was ist die Idee?
+
+Wir möchten die Beziehung zwischen zwei Merkmalen verstehen. Zum Beispiel: Welchen Einfluss hat die Wohnfläche auf den Wert eines Hauses? Dafür brauchen wir Daten. Zum Glück haben wir einen Datensatz vorliegen mit Verkaufspreisen von Häusern in Boston 1990:^[Zugegeben, die Daten sind alt und wahrscheinlich nicht repräsentativ für Deutschland, aber für eine Demonstration genügen sie.] **price** ist im Datensatz der Verkaufspreis in Dollar, **sqm** die Wohnfläche in Quadratmetern, **bedrooms** die Anzahl an Schlafzimmern, **lotsize** die Grundstücksfläche in Quadratmetern und **colonial** ein Indikator dafür, ob das Haus im [Kolonialstil](https://de.wikipedia.org/wiki/Kolonialstil) gebaut wurde.
+
+```{r, include = FALSE}
+library(dplyr)
+data <- wooldridge::hprice1 %>% 
+  summarize(
+    price = price * 1000, 
+    sqm = sqrft * 0.09290304, 
+    bedrooms = bdrms,
+    lotsize = lotsize * 0.09290304,
+    colonial = colonial
+  )
+```
+
+```{r, echo = FALSE}
+rmarkdown::paged_table(data)
+```
+
+Wir schauen uns ein Streudiagramm der Verkaufspreise und Wohnflächen an:
+
+```{r, echo = FALSE, warning = FALSE}
+library(ggplot2)
+library(scales)
+ggplot(data, aes(x = sqm, y = price)) +
+  geom_point() +
+  scale_y_continuous(labels = dollar_format()) +
+  labs(
+    title = "Verkaufspreise von Wohnhäusern in Boston 1990",
+    caption = "(Datengrundlage ist `wooldridge::hprice1`)"
+  ) +
+  xlab("Wohnfläche in Quadratmetern") +
+  ylab("Verkaufspreis")
+```
+
+Da scheint es einen Zusammenhang zu geben: Wenig überraschened haben Häuser mit einer größeren Wohnfläche einen höheren Verkaufspreis erzielt. Wir fragen uns jetzt: Um wie viel Euro steigt der Wert eines Haus mit einem zusätzlichen Quadratmeter an Wohnfläche? Und was ist wohl der Wert unseres eigenen Hauses mit einer Wohnfläche von $x$ Quaratmetern? Die Antworten kann uns ein Modell liefern.
+
+## Was für ein Modell?
+
+

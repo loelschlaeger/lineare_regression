@@ -1,7 +1,7 @@
 --- 
 title: "Lineare Regression"
 author: "Lennart Oelschläger"
-date: "19.01.2023"
+date: "20.01.2023"
 description: |
   Eine Einführung in die lineare Regression
 site: bookdown::bookdown_site
@@ -19,7 +19,19 @@ Dieses eBook entsteht während des Wintersemesters 2022/23 und des Sommersemeste
 
 ## Inhalte {-}
 
-...
+- Einfache Regressionsanalyse
+
+- Multiple Regressionsanalyse
+
+- Interpretation der Schätzung
+
+- Modellselektion
+
+- Modellvorhersage
+
+## Literaturempfehlung {-}
+
+Jeff Wooldridge: Introductory Econometrics (5th ed.), Cengage Learning, 2013.
 
 ## Über mich {-}
 

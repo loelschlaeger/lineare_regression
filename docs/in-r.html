@@ -4,22 +4,23 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>1 In R | Lineare Regression</title>
+<title>2 In R | Lineare Regression</title>
 <meta name="author" content="Lennart Oelschläger">
 <meta name="description" content="…">
 <meta name="generator" content="bookdown 0.32 with bs4_book()">
-<meta property="og:title" content="1 In R | Lineare Regression">
+<meta property="og:title" content="2 In R | Lineare Regression">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://loelschaeger.de/lineare_regression/in-r.html">
 <meta property="og:description" content="…">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="1 In R | Lineare Regression">
+<meta name="twitter:title" content="2 In R | Lineare Regression">
 <meta name="twitter:description" content="…">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><link href="libs/Sen-0.4.2/font.css" rel="stylesheet">
-<script src="libs/bs3compat-0.4.0/transition.js"></script><script src="libs/bs3compat-0.4.0/tabs.js"></script><script src="libs/bs3compat-0.4.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
-<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script>
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><link href="libs/Sen-0.4.4/font.css" rel="stylesheet">
+<script src="libs/bs3compat-0.4.2/transition.js"></script><script src="libs/bs3compat-0.4.2/tabs.js"></script><script src="libs/bs3compat-0.4.2/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><link href="libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+<script src="libs/pagedtable-1.1/js/pagedtable.js"></script><script>
 
     function reveal(divid) {
 
@@ -61,7 +62,8 @@
       <nav aria-label="Inhaltsverzeichnis"><h2>Inhaltsverzeichnis</h2>
         <ul class="book-toc list-unstyled">
 <li><a class="" href="index.html">Willkommen</a></li>
-<li><a class="active" href="in-r.html"><span class="header-section-number">1</span> In R</a></li>
+<li><a class="" href="einfache-regressionsanalyse.html"><span class="header-section-number">1</span> Einfache Regressionsanalyse</a></li>
+<li><a class="active" href="in-r.html"><span class="header-section-number">2</span> In R</a></li>
 </ul>
 
         <div class="book-extra">
@@ -69,24 +71,24 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="in-r" class="section level1" number="1">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="in-r" class="section level1" number="2">
 <h1>
-<span class="header-section-number">1</span> In R<a class="anchor" aria-label="anchor" href="#in-r"><i class="fas fa-link"></i></a>
+<span class="header-section-number">2</span> In R<a class="anchor" aria-label="anchor" href="#in-r"><i class="fas fa-link"></i></a>
 </h1>
 <p>…</p>
 
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="index.html">Willkommen</a></div>
+<div class="prev"><a href="einfache-regressionsanalyse.html"><span class="header-section-number">1</span> Einfache Regressionsanalyse</a></div>
 <div class="empty"></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="Auf dieser Seite"><h2>Auf dieser Seite</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#in-r"><span class="header-section-number">1</span> In R</a></li></ul>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#in-r"><span class="header-section-number">2</span> In R</a></li></ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/loelschlaeger/lineare_regression/blob/master/01-in-R.Rmd">Quelltext anzeigen <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/loelschlaeger/lineare_regression/edit/master/01-in-R.Rmd">Seite bearbeiten <i class="fab fa-github"></i></a></li>
+<li><a id="book-source" href="https://github.com/loelschlaeger/lineare_regression/blob/master/02-in-R.Rmd">Quelltext anzeigen <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/loelschlaeger/lineare_regression/edit/master/02-in-R.Rmd">Seite bearbeiten <i class="fab fa-github"></i></a></li>
         </ul>
 </div>
     </nav>
@@ -98,7 +100,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Lineare Regression</strong>". Von Lennart Oelschläger. Letztes Update am 19.01.2023.</p>
+    <p>"<strong>Lineare Regression</strong>". Von Lennart Oelschläger. Letztes Update am 20.01.2023.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
