@@ -1,0 +1,28 @@
+# Regression in R
+
+```{r, include = FALSE}
+library(dplyr)
+data <- wooldridge::hprice1 %>% 
+  summarize(
+    preis = price * 1000, 
+    wohnflaeche = sqrft * 0.09290304, 
+    schlafzimmer = bdrms,
+    grundstueck = lotsize * 0.09290304
+  )
+```
+
+```{r}
+str(data)
+```
+
+```{r}
+formula <- preis ~ wohnflaeche + I(schlafzimmer > 4) + grundstueck
+```
+
+```{r}
+model <- lm(formula = formula, data = data)
+```
+
+```{r}
+summary(model)
+```

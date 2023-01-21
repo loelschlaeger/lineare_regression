@@ -1,4 +1,0 @@
-einfache-regressionsanalyse
-was-ist-die-idee
-was-für-ein-modell
-in-r
