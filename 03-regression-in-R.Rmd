@@ -26,3 +26,7 @@ model <- lm(formula = formula, data = data)
 ```{r}
 summary(model)
 ```
+
+<div class="yt-container">
+  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/NEfjirpOj7s?rel=0&autoplay=0&showinfo=0&controls=0" frameborder="0"></iframe>
+</div>
