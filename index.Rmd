@@ -11,7 +11,7 @@ url: https://loelschaeger.de/lineare_regression
 
 # Willkommen {-}
 
-... &#129351;
+In vielen Lebensbereichen möchte man gerne Zusammenhänge verstehen: Wie beeinflusst Bildung das spätere Gehalt? Wie schätze ich den Wert einer Immobilie basierend auf Wohnfläche und Schlafzimmeranzahl? Reduziert Alkoholkonsum die Lebenserwartung? Dazu kann man eine Datenstichprobe erheben und ein statistisches Modell anpassen, das solche Zusammehänge quantifizieren kann. Das Regressionsmodell ist eine einfache aber sehr verbreitete und nützliche Methode. Lass uns gemeinsam das Verfahren und seine Stärken und Schwächen kennenlernen! &#129351;
 
 ::: {.rmdwarning}
 Dieses eBook entsteht während des Wintersemesters 2022/23 und des Sommersemesters 2023 und wird laufend überarbeitet. [Benachrichtige mich](#dein-feedback) bitte bei Fehlern oder Ergänzungswünschen.
@@ -19,19 +19,7 @@ Dieses eBook entsteht während des Wintersemesters 2022/23 und des Sommersemeste
 
 ## Inhalte {-}
 
-- Einfache Regressionsanalyse
-
-- Multiple Regressionsanalyse
-
-- Interpretation der Schätzung
-
-- Modellselektion
-
-- Modellvorhersage
-
-## Literaturempfehlung {-}
-
-Jeff Wooldridge: Introductory Econometrics (5th ed.), Cengage Learning, 2013.
+Wir besprechen die klassischen Themen rund um die Regressionsanalyse, beginnend mit der einfachen Regressionsanalyse, dir zur multiplen Regressionsanalyse verallgemeinert wird. Weitere Themen sind die Interpretation der Schätzung, Signifikanzanalyse, Modellselektion und Modellvorhersage.
 
 ## Über mich {-}
 

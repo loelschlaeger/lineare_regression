@@ -1,4 +1,10 @@
-# Einfache Regressionsanalyse
+# (PART) Das Modell {-}
+
+# Einfache Regression
+
+::: {.rmdwarning}
+Dieses Kapitel ist gerade in Bearbeitung. &#128119;
+:::
 
 ## Was ist die Idee?
 
@@ -19,7 +25,7 @@ data <- wooldridge::hprice1 %>%
 rmarkdown::paged_table(data)
 ```
 
-Wir schauen uns ein Streudiagramm der Verkaufspreise und Wohnflächen an:
+Wir konzentrieren uns zunächst nur auf die Wohnfläche und die damit verbundenen Verkaufspreise. Ein Streudiagramm der Daten sieht so aus:
 
 ```{r, echo = FALSE, warning = FALSE}
 library(ggplot2)
@@ -45,9 +51,12 @@ Die Antworten kann uns ein Modell liefern.
 
 ## Was für ein Modell?
 
-Da gibt es verschiedene Möglichkeiten, aber eine einfache Idee für den Anfang ist ein lineares Modell der Form
+Da gibt es verschiedene Möglichkeiten, aber eine naheliegende Idee für den Anfang ist ein lineares Modell der Form
 
-$$\text{Verkaufspreis} = \beta_0 + \beta_1 \text{Wohnfläche}.$$
+\begin{equation}
+\text{Verkaufspreis} = \beta_0 + \beta_1 \text{Wohnfläche}.
+(\#eq:slr)
+\end{equation}
 
 Das Modell berechnet also den Verkaufspreis, indem die Wohnfläche mit einem Koeffizienten $\beta_1$ multipliziert und der Koeffizient $\beta_0$ addiert wird - eine klassische, lineare Funktion. Grafisch sieht das zum Beispiel so aus:
 
@@ -69,8 +78,7 @@ Ich habe $\beta_0 = 11000$ und $\beta_1 = 1500$ gewählt, damit die blaue Linie 
 
 Es gibt aber noch etwas zu beachten:
 
-1. beta geraten
+1. Die Werte für $\beta_0$ und $\beta_1$ habe ich geraten. Das ist ungenau, wir wünschen uns ein Verfahren mit denen diese Werte aus den Daten berechnet werden können.
 
-2. Fehler ignoriert
-
+2. Die Datenpunkte weichen von unserer linearen Funktion ab, der Verkaufspreis kann also nicht exakt durch die Wohnfläche bestimmt werden. Unser Modell braucht also noch eine Ergänzung, die mit Messfehlern umgehen kann.
 
