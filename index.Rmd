@@ -19,7 +19,7 @@ Dieses eBook entsteht während des Wintersemesters 2022/23 und des Sommersemeste
 
 ## Inhalte {-}
 
-Wir besprechen die klassischen Themen rund um die Regressionsanalyse, beginnend mit der einfachen Regressionsanalyse, dir zur multiplen Regressionsanalyse verallgemeinert wird. Weitere Themen sind die Interpretation der Schätzung, Signifikanzanalyse, Modellselektion und Modellvorhersage.
+Wir besprechen die klassischen Themen rund um die Regressionsanalyse, beginnend mit der einfachen Regressionsanalyse, die zur multiplen Regressionsanalyse verallgemeinert wird. Weitere Themen sind die Interpretation der Schätzung, Signifikanzanalyse, Modellselektion und Modellvorhersage.
 
 ## Über mich {-}
 
