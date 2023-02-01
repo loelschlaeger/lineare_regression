@@ -1,0 +1,30 @@
+--- 
+title: "Lineare Regression"
+author: "Lennart Oelschläger"
+date: "01.02.2023"
+description: |
+  Eine Einführung in die lineare Regression
+site: bookdown::bookdown_site
+documentclass: book
+url: https://loelschaeger.de/lineare_regression
+---
+
+# Willkommen {-}
+
+In vielen Lebensbereichen möchte man gerne Zusammenhänge verstehen: Wie beeinflusst Bildung das spätere Gehalt? Wie schätze ich den Wert einer Immobilie basierend auf Wohnfläche und Schlafzimmeranzahl? Reduziert Alkoholkonsum die Lebenserwartung? Dazu kann man eine Datenstichprobe erheben und ein statistisches Modell anpassen, das solche Zusammehänge quantifizieren kann. Das Regressionsmodell ist eine einfache aber sehr verbreitete und nützliche Methode. Lass uns gemeinsam das Verfahren und seine Stärken und Schwächen kennenlernen! &#129351;
+
+::: {.rmdwarning}
+Dieses eBook entsteht während des Wintersemesters 2022/23 und des Sommersemesters 2023 und wird laufend überarbeitet. [Benachrichtige mich](#dein-feedback) bitte bei Fehlern oder Ergänzungswünschen.
+:::
+
+## Inhalte {-}
+
+Wir besprechen die klassischen Themen rund um die Regressionsanalyse, beginnend mit der einfachen Regressionsanalyse, dir zur multiplen Regressionsanalyse verallgemeinert wird. Weitere Themen sind die Interpretation der Schätzung, Signifikanzanalyse, Modellselektion und Modellvorhersage.
+
+## Über mich {-}
+
+Ich bin Lennart, habe Wirtschaftsmathematik studiert und promoviere gerade in Statistik an der Uni Bielefeld. Mehr über mich steht auf [meiner Webseite](https://loelschlaeger.de/). &#x1F913;
+
+## Dein Feedback {-}
+
+Ich freue mich über jeden Verbesserungsvorschlag, der mir [per E-Mail](mailto:oelschlaeger.lennart@gmail.com) zugesendet wird. Mit einem [Github Account](https://www.github.com) kannst du jede Seite auch direkt selbst editieren.
